@@ -13,3 +13,13 @@ SELECT sum(quantity)
 FROM BIT_DB.FebSales 
 WHERE orderdate like '02/18/19%'
 ### We're really saying to select orderdate wherever it starts with 02/18/19, no matter what the time (HH:MM) was.
+
+
+## LIKE ##
+SELECT distinct Product, Price
+FROM BIT_DB.FebSales 
+WHERE Price like '%.99'
+
+SELECT Product, SUM(Quantity)
+FROM BIT_DB.FebSales 
+WHERE location Like '%Los Angeles%'
