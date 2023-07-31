@@ -23,3 +23,6 @@ WHERE Price like '%.99'
 SELECT Product, SUM(Quantity)
 FROM BIT_DB.FebSales 
 WHERE location Like '%Los Angeles%'
+GROUP BY Product;
+
+### Becasuse we mixed and aggregate function witgh a non-aggregate function in the query we GROUP BY ##
