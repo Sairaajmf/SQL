@@ -12,3 +12,4 @@ WHERE orderdate = '02/18/19 01:35'
 SELECT sum(quantity)
 FROM BIT_DB.FebSales 
 WHERE orderdate like '02/18/19%'
+### We're really saying to select orderdate wherever it starts with 02/18/19, no matter what the time (HH:MM) was.
